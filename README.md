@@ -10,3 +10,15 @@ function pigLatin(text){
     return word
     }
   }
+
+Test: "It recognizes a single vowel in a word with multiple characters."
+code: pigLatin("Epicodus")
+Expected Output: "Epicodusway"
+
+function pigLatin(text){
+	if(text.length[0] === "a" || "e" || "i" || "o" || "u"){
+    let word = text.concat("way");
+    return word
+    }
+  }
+
